@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>webpage 2.0</title>
+        <style>
+            .e{
+                position: center;
+            }
+            h1{
+                text-align: center;
+                color: aqua;
+                text-shadow: 3px 3px navajowhite;
+            }
+            .h{
+                text-align: center;
+            }
+            body{
+                counter-reset: t ;
+            }
+            h3{
+                counter-reset:r ;
+            }
+            h3::before{
+                content: counter(t) ":";
+                counter-increment: t ;
+                color: red;
+            }
+            h4::before{
+                content: " " counter(t) "."  counter(r) ":";
+                counter-increment: r 1;
+                color: green;
+            }
+            .b{
+                border: 3px solid black;
+                height: 750px;
+                width: 300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p><a href="#top">click here</a></p>
+        <h1>
+           <u><b>This is about the Machine learing</b></u> 
+        </h1>
+        <img src="download (2).jfif" height="500px" width="1500px" alt="ML"><br>
+        <hr>
+        <hr>
+        <div>
+            <h2 class="h"><u><b>Introduction of Machine learning</b></u></h2>
+            <p>Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks.
+                 It is seen as a part of artificial intelligence. Machine learning algorithms build a model
+                 based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.
+                  Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition,
+                   and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.
+
+
+                A subset of machine learning is closely related to computational statistics, which focuses on making predictions using computers, but not all machine learning is statistical learning.
+                 The study of mathematical optimization delivers methods, theory and application domains to the field of machine learning. Data mining is a related field of study, focusing on exploratory data analysis through unsupervised learning.
+                  Some implementations of machine learning use data and neural networks in a way that mimics the working of a biological brain.
+                   In its application across business problems, machine learning is also referred to as predictive analytics.
+            </p>
+        </div>
+
+        <div class="b">
+            <ul>
+                <u><h2 class="h">content</h2></u>
+                <li><h3><a href="#top">Overview</a></h3></li>
+                <li><h3><a href="#history">History of ML</a></h3></li>
+                <ul>
+                    <li><h4>artificial intelligence</h4></li>
+                    <li><h4>Data mining</h4></li>
+                    <li><h4>optimization</h4></li>
+                    <li><h4>Generalization</h4></li>
+                    <li><h4>statistics</h4></li>
+                </ul>
+
+                <li><h3>Theory</h3></li>
+                <li><h3>Apporchs</h3></li>
+
+                <ul>
+                    <li><h4>Supervised learning</h4></li>
+                    <li><h4>unsupervised learning</h4></li>
+                    <li><h4>Semi-Supervised learning</h4></li>
+                    <li><h4>Reinforcement learning</h4></li>
+                    <li><h4>Dimensionality reduction</h4></li>
+                    <li><h4>Other types</h4>    </li>
+                    <li><h4>Models</h4></li>
+                    <li><h4>Training models</h4></li>
+                </ul>
+            </ul>
+        </div>
+        <br>
+        <img src="robot.jpg" alt="rbt" width="1500px" class="e">
+        <br>
+        <br>
+        <br>
+
+        <div id="top">
+            <h2><u><b></b>Overview</u></h2>
+            
+            <p>Learning algorithms work on the basis that strategies, algorithms, and inferences that worked well in the past are likely to continue working well in the future. These inferences can be obvious, such as "since the sun rose every morning for the last 10,000 days, it will probably rise tomorrow morning as well". They can be nuanced, such as "X% of families have geographically separate species with color variants, so there is a Y% chance that undiscovered black swans exist".
+
+                Machine learning programs can perform tasks without being explicitly programmed to do so. It involves computers learning from data provided so that they carry out certain tasks. For simple tasks assigned to computers, it is possible to program algorithms telling the machine how to execute all steps required to solve the problem at hand; on the computer's part, no learning is needed. For more advanced tasks, it can be challenging for a human to manually create the needed algorithms.
+                 In practice, it can turn out to be more effective to help the machine develop its own algorithm, rather than having human programmers specify every needed step.[10]
+                
+                The discipline of machine learning employs various approaches to teach computers to accomplish tasks where no fully satisfactory algorithm is available. 
+                In cases where vast numbers of potential answers exist, one approach is to label some of the correct answers as valid. This can then be used as training data for the computer to improve the algorithm(s) it uses to determine correct answers. 
+                For example, to train a system for the task of digital character recognition, the MNIST dataset of handwritten digits has often been used.</p>
+        </div>
+
+        <div id="history">
+            <p>The term machine learning was coined in 1959 by Arthur Samuel, an IBM employee and pioneer in the field of computer gaming and artificial intelligence.[11][12] Also the synonym self-teaching computers were used in this time period.[13][14]
+
+                By the early 1960s an experimental "learning machine" with punched tape memory, called Cybertron, had been developed by Raytheon Company to analyze sonar signals, electrocardiograms and speech patterns using rudimentary reinforcement learning. It was repetitively "trained" by a human operator/teacher to recognize patterns and equipped with a "goof" button to cause it to re-evaluate incorrect decisions.[15] A representative book on research into machine learning during the 1960s was Nilsson's book on Learning Machines, dealing mostly with machine learning for pattern classification.[16] Interest related to pattern recognition continued into the 1970s, as described by Duda and Hart in 1973.[17] In 1981 a report was given on using teaching strategies so that a neural network learns to recognize 40 characters (26 letters, 10 digits, and 4 special symbols) from a computer terminal.[18]
+                
+                Tom M. Mitchell provided a widely quoted, more formal definition of the algorithms studied in the machine learning field: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E."[19] This definition of the tasks in which machine learning is concerned offers a fundamentally operational definition rather than defining the field in cognitive terms. This follows Alan Turing's proposal in his paper "Computing Machinery and Intelligence", in which the question "Can machines think?" is replaced with the question "Can machines do what we (as thinking entities) can do?".[20]
+                
+                Modern day machine learning has two objectives, one is to classify data based on models which have been developed, the other purpose is to make predictions for future outcomes based on these models. A hypothetical algorithm specific to classifying data may use computer vision of moles coupled with supervised learning in order to train it to classify the cancerous moles. A machine learning algorithm for stock trading may inform the trader of future potential predictions.[21]</p>
+        </div>
+    </body>
+</html>
